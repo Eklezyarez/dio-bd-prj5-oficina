@@ -1,29 +1,29 @@
 -- criação do banco de dados para o cenário da Oficina
-use ecommerce;
+use oficina;
 
 -- criar tabela cliente
 create table client(
 		idClient int auto_increment primary key,
-        Fname varchar(10),
-        Minit char(3),
-        Lname varchar(20),
-        CPF char(11) not null,
-        Address varchar(30),
+        Fname varchar(45),
+        Telefone varchar(10),
+        Endereco varchar(20),
+        CPF varchar(11),
+        DtNasc date,
         constraint unique_cpf_client unique (CPF)
 );
 
 alter table clients auto_increment=1;
 
---desc clients;
--- criar tabela produto
+-- criar tabela veículo
 
-create table product(
-		idProduct int auto_increment primary key,
-        Pname varchar(10) not null,
-        classification_kids bool default false,
-        category enum('Eletrônico','Vestimenta','Brinquedos','Alimentos','Móveis') not null,
-        rating float default 0,
-        size varchar(10)
+create table vericulo(
+		idVeiculo int auto_increment primary key,
+        Marca varchar(10),
+        Cor varchar(10),
+        Modelo varchar(10),
+        AnoFabricacao date,
+        numeroChassi varchar(10),
+        Placa varchar(10)
 );
 
 create table payments(

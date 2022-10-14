@@ -7,9 +7,8 @@ create table cliente(
         Nome varchar(45),
         Telefone varchar(10),
         Endereco varchar(20),
-        CPF varchar(11),
-        DtNasc date,
-        constraint unique_cpf_cliente unique (CPF)
+        DtNasc date
+
 );
 
 alter table cliente auto_increment=1;
@@ -27,7 +26,7 @@ create table veiculo(
 );
 
 -- criar tabela orçamento
-create table orders(
+create table Orcamento(
 	   idOrcamento int auto_increment primary key,
        NomeMecanico varchar(30),
        DataEntrada date,

@@ -17,5 +17,10 @@ insert into Veiculo (Marca, Cor, Modelo, AnoFabricacao, numeroChassi,Placa) valu
 insert into Orcamento (NomeMecanico, DataEntrada, DataSaida, Aprovado, Finalizado) values
 				  ('Francisco', '25/03/2022', '30/03/2022', true, true),
 				  ('Marcos', '30/04/2022', '07/05/2022', true, false);
+
+-- idItemOrcamento, Tipo, Quantidade
+insert into idItemOrcamento (Tipo, Quantidade) values
+				  ('Manutenção',1),
+				  ('Manutenção',2);
               
                           

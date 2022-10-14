@@ -21,6 +21,11 @@ insert into Orcamento (NomeMecanico, DataEntrada, DataSaida, Aprovado, Finalizad
 -- idItemOrcamento, Tipo, Quantidade
 insert into idItemOrcamento (Tipo, Quantidade) values
 				  ('Manutenção',1),
-				  ('Manutenção',2);
+				  ('Revisão',2);
+
+-- idPecasMaoObra, Descricao, Preco
+insert into PecasMaoObra (Descricao, Preco) values
+				  ('Trocar haste diagonal',1200),
+				  ('Trocar óleo',50);
               
                           

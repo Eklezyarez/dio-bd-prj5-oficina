@@ -44,4 +44,10 @@ create table productStorage(
        constraint fk_Veiculo_idVeiculo foreign key (idVeiculo) references cliente(idCliente)
        constraint fk_PecasMaoObra_idPecasMaoObra foreign key (idPecasMaoObra) references PecasMaoObra(idPecasMaoObra)
 
+-- criar tabela PecasMaoObra
+create table PecasMaoObra(
+	   idPecasMaoObra int auto_increment primary key,
+       Descricao varchar(30),
+       Preco float
 
+);
